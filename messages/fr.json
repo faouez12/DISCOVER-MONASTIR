@@ -1,0 +1,546 @@
+{
+    "Navbar": {
+        "explore": "Explorer",
+        "attractions": "Attractions",
+        "secretSpots": "Lieux Secrets",
+        "crafts": "Artisanat",
+        "planTrip": "Planifier",
+        "login": "Connexion"
+    },
+    "Search": {
+        "placeholder": "Rechercher des lieux, artisanat ou secrets...",
+        "noResults": "Aucun résultat pour",
+        "popular": "Recherches Populaires",
+        "esc": "Esc"
+    },
+    "HeroSlider": {
+        "title1": "Découvrir Monastir",
+        "title2": "Plages Infinies",
+        "title3": "Forteresse du Ribat",
+        "title4": "Marina de Luxe",
+        "title5": "Marchés Authentiques",
+        "subtitle1": "Aperçu",
+        "subtitle2": "Plages",
+        "subtitle3": "Histoire",
+        "subtitle4": "Marina",
+        "subtitle5": "Marchés"
+    },
+    "CTA": {
+        "bookYourTrip": "Réserver Votre Voyage"
+    },
+    "Discover": {
+        "journeyBegins": "Le voyage commence",
+        "chronicle": "La Chronique",
+        "explorersKit": "Kit de l'Explorateur",
+        "recommendedWear": "Tenue Recommandée",
+        "perfectShot": "Photo Parfaite",
+        "goldenHour": "Heure Dorée",
+        "scent": "L'Odeur",
+        "sound": "Le Son",
+        "touch": "Le Toucher",
+        "throughTime": "À travers le temps",
+        "evolution": "L'évolution d'une légende",
+        "insidersPath": "Le Chemin de l'Initié",
+        "exploreLikeNative": "Explorer comme un Habitant",
+        "nextDiscovery": "Prochaine Découverte",
+        "newStory": "Une nouvelle histoire vous attend",
+        "seasonalPulse": "Pouls Saisonnier",
+        "livingCycle": "Le Cycle Vivant",
+        "soulPledge": "Engagement de l'Âme",
+        "signChronicle": "Signer la Chronique",
+        "legacy": "Vous faites maintenant partie de l'héritage"
+    },
+    "TravelInfo": {
+        "titlePart1": "Planifiez votre",
+        "titlePart2": "Évasion",
+        "description": "Nous avons sélectionné les meilleurs moyens de rejoindre et de découvrir Monastir. Commencez votre voyage en trouvant le vol parfait.",
+        "findFlights": "Trouver des Vols",
+        "departingFrom": "Départ de",
+        "arrivingAt": "Arrivée à",
+        "travelDates": "Dates de Voyage",
+        "searchRates": "Chercher les Meilleurs Tarifs",
+        "placeholderDepart": "Tapez une ville ou un aéroport...",
+        "handPickedStays": "Séjours Sélectionnés",
+        "viewAllBooking": "Voir toutes les propriétés sur Booking.com",
+        "localTransport": "Transport Local",
+        "localTransportDesc": "La plupart des endroits à Monastir sont accessibles en taxi jaune pour moins de 5 $. Sûr, bon marché et toujours disponible.",
+        "giftingCulture": "Culture du Cadeau",
+        "giftingCultureDesc": "Visitez la vieille médina pour de la poterie et du cuir authentiques. Le marchandage est attendu et fait partie du charme.",
+        "bestSunset": "Meilleur Coucher de Soleil",
+        "bestSunsetDesc": "Rendez-vous aux quais de la Marina ou au mur de mer du cimetière vers 18h30 pour les vues les plus emblématiques."
+    },
+    "MysteryClub": {
+        "badge": "Accès Exclusif",
+        "title": "Rejoignez le Club Secret de Monastir",
+        "description": "Recevez notre carte des 'Joyaux Cachés', des offres de vols exclusives et des réductions d'hôtels triés sur le volet directement dans votre boîte de réception.",
+        "placeholder": "Entrez votre email",
+        "button": "Obtenir l'accès",
+        "successTitle": "Bienvenue au Club !",
+        "successDescription": "Consultez votre boîte de réception pour votre carte secrète. Bienvenue dans l'élite de Monastir."
+    },
+    "Footer": {
+        "tagline": "Découvrez les histoires cachées et la beauté intemporelle de la perle de la Tunisie. Votre voyage au cœur du Sahel commence ici.",
+        "explore": "Explorer",
+        "usefulInfo": "Infos Utiles",
+        "stayInspired": "Restez Inspiré",
+        "subscribeDesc": "Abonnez-vous pour recevoir des conseils de voyage et des alertes sur les joyaux cachés.",
+        "placeholder": "Votre email",
+        "join": "S'abonner",
+        "welcome": "Bienvenue dans le Cercle !",
+        "rights": "Tous droits réservés.",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation",
+        "exploreDestinations": "Destinations",
+        "exploreWonders": "Merveilles Cachées",
+        "exploreCrafts": "Artisanat Local",
+        "exploreTravelGuide": "Guide de Voyage",
+        "visaReq": "Conditions de Visa",
+        "howToGet": "Comment y aller",
+        "transport": "Transport",
+        "weather": "Météo & Meilleure Période",
+        "culture": "Culture & Éthique"
+    },
+    "Destinations": {
+        "title": "Destinations",
+        "subtitle": "Pour Chaque Liste de Souhaits",
+        "discoverMore": "Découvrir Plus ←",
+        "ribat": "Le Ribat",
+        "ribatSub": "Forteresse Antique",
+        "mausoleum": "Le Mausolée",
+        "mausoleumSub": "Héritage de Bourguiba",
+        "beaches": "Les Plages",
+        "beachesSub": "Rives Dorées",
+        "marina": "La Marina",
+        "marinaSub": "Port de Plaisance",
+        "medina": "La Médina",
+        "medinaSub": "Vieille Ville",
+        "mosque": "La Mosquée",
+        "mosqueSub": "Grande Mosquée",
+        "museum": "Le Musée",
+        "museumSub": "Musée Bourguiba"
+    },
+    "Attractions": {
+        "title": "Attractions",
+        "subtitle": "Dignes d'Mille Histoires",
+        "discover": "Découvrir",
+        "ribatDawn": "Aube au Ribat",
+        "mausoleumLegacy": "Héritage Doré",
+        "marinaTwilight": "Crépuscule à la Marina",
+        "medinaHunt": "Trésors de la Médina",
+        "hammamSwim": "Grotte de Hammam Said",
+        "beachSolitude": "Solitude de Plage",
+        "cemeteryWhispers": "Murmures du Cimetière",
+        "caveQuest": "Quête de Ghdamsi",
+        "museumChronicles": "Chroniques du Musée"
+    },
+    "Wonders": {
+        "title": "Merveilles Cachées",
+        "subtitle": "Secrets de la Cité du Sel",
+        "discoverStory": "Découvrir l'Histoire ←",
+        "hammamCove": "Crique Hammam Said",
+        "hammamCoveSub": "Le Secret de l'Eau Cristalline",
+        "swaniBeach": "Plage Skanes",
+        "swaniBeachSub": "Le Sentier Sauvage",
+        "ghdamsiCoast": "Côte de Ghdamsi",
+        "ghdamsiCoastSub": "Rochers et Échos de Pêche",
+        "oldPort": "Vieux Port",
+        "oldPortSub": "Quai des Pêcheurs Authentiques",
+        "seaCemetery": "Cimetière Marin",
+        "seaCemeterySub": "Tombeaux Blancs Paisibles",
+        "viewpointDune": "Dune de Vue",
+        "viewpointDuneSub": "Panoramas sur la Baie",
+        "medinaAlleys": "Ruelles de la Médina",
+        "medinaAlleysSub": "Rues Calmes et Portes Bleues"
+    },
+    "Crafts": {
+        "title": "Artisanat d'Excellence",
+        "subtitle": "de tradition intemporelle",
+        "exploreCraft": "Explorer l'Artisanat ←",
+        "oliveWood": "Bois d'Olivier",
+        "oliveWoodSub": "Sculptures Artisanales",
+        "pottery": "Poterie de Moknine",
+        "potterySub": "Maîtrise de l'Argile Antique",
+        "chechia": "Chéchias",
+        "chechiaSub": "Héritage Traditionnel",
+        "fouta": "Foutas",
+        "foutaSub": "Essentiels du Hammam",
+        "copper": "Lampes en Cuivre",
+        "copperSub": "Éclat Gravé à la Main",
+        "embroidery": "Broderie du Sahel",
+        "embroiderySub": "Travail d'Aiguille Délicat"
+    },
+    "DiscoverData": {
+        "ribat-dawn-patrol": {
+            "title": "Patrouille de l'Aube au Ribat",
+            "subtitle": "Gardien de la Méditerranée",
+            "description": "Un voyage avant l'aube pour témoigner de la première lumière touchant les remparts du VIIIe siècle.",
+            "tags": [
+                "Photographie",
+                "Spiritualité",
+                "Calme"
+            ],
+            "facts": [
+                {
+                    "label": "Ambiance",
+                    "value": "Transcendant"
+                },
+                {
+                    "label": "Foule",
+                    "value": "Aucune"
+                },
+                {
+                    "label": "Difficulté",
+                    "value": "Lève-tard s'abstenir"
+                }
+            ],
+            "story": "Le Ribat de Monastir est sans doute la forteresse la plus cinématique d'Afrique du Nord. À l'aube, c'est un monde complètement différent.\n\nMarcher sur les remparts alors que les premiers rayons du soleil frappent la pierre ocre doré donne l'impression de marcher à travers un plateau de tournage d'un autre siècle. Le silence est absolu, brisé seulement par le bruit de la mer et le battement des drapeaux sur la tour Nador.\n\nC'est plus qu'une vue ; c'est un sentiment de continuité temporelle. Alors que la ville en bas s'éveille lentement, vous avez le privilège de voir la péninsule exactement comme les sentinelles du IXe siècle le faisaient—pure, puissante et éternelle.",
+            "sensory": {
+                "scent": "Embruns Froids et Pierre Chauffée au Soleil",
+                "sound": "Le Battement Rythmique du Drapeau de la Tour Nador",
+                "touch": "Grès Lisse à 4h30 du Matin",
+                "colors": [
+                    "#FBBF24",
+                    "#92400E",
+                    "#0EA5E9"
+                ]
+            },
+            "kit": {
+                "footwear": "Baskets confortables pour les escaliers étroits",
+                "photo": "Regard à travers un créneau vers le port",
+                "hour": "5h15 (Arrivée)"
+            },
+            "quote": {
+                "text": "La mer n'a pas d'horloge, et au Ribat, vous non plus.",
+                "author": "Garde de la Citadelle Légendaire"
+            },
+            "chronology": [
+                {
+                    "year": "796 AD",
+                    "title": "La Première Pierre",
+                    "description": "Fondation du Ribat comme bastion défensif pour l'Afrique du Nord nouvellement islamique."
+                },
+                {
+                    "year": "1978",
+                    "title": "Célébrité Mondiale",
+                    "description": "Le Ribat sert de décor principal pour 'La Vie de Brian', cimentant son héritage cinématique."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "La Niche Secrète",
+                    "description": "Trouvez la petite alcôve au deuxième étage de la tour Nador—c'est le seul endroit où le vent est complètement silencieux."
+                }
+            ],
+            "seasons": {
+                "spring": "La pierre est fraîche et l'air porte un léger parfum de jasmin de la Médina.",
+                "summer": "Essentiel pour éviter les 40 degrés ; l'aube est la seule heure respirable.",
+                "autumn": "Les nuages les plus dramatiques encadrent les tours après la fin de la chaleur estivale.",
+                "winter": "Une expérience brute et puissante. Les tempêtes frappent les murs avec une énergie viscérale."
+            },
+            "pledge": "J'ai vu l'aube sur les murs de la forteresse, j'ai entendu les pierres parler, je suis un guardien de l'âme de Monastir."
+        },
+        "mausoleum-legacy": {
+            "title": "Héritage Doré de Bourguiba",
+            "subtitle": "Architecture de l'Indépendance",
+            "description": "Une plongée dans la symétrie et le symbolisme du monument moderne le plus sacré de la nation.",
+            "tags": [
+                "Design",
+                "Histoire",
+                "National"
+            ],
+            "facts": [
+                {
+                    "label": "Symétrie",
+                    "value": "Parfaite"
+                },
+                {
+                    "label": "Matériau",
+                    "value": "Marbre de Carrare"
+                },
+                {
+                    "label": "Esprit",
+                    "value": "National"
+                }
+            ],
+            "story": "Le Mausolée Bourguiba est plus qu'une tombe ; c'est un témoignage de la vision d'un homme qui a construit une Tunisie moderne à partir de zéro.\n\nArchitecturalement, c'est un mariage entre les traditions ottomanes et le style minimaliste du Sahel. Le marbre blanc contre le bleu méditerranéen crée une harmonie visuelle inégalée dans la région. Chaque carreau de mosaïque raconte une histoire des 3000 ans d'histoire qui ont conduit à la naissance de la République.\n\nÀ l'intérieur, le lustre massif et le silence imposant créent un espace pour une réflexion profonde sur nos origines et notre destination. C'est le point culminant de la fierté nationale de la ville.",
+            "sensory": {
+                "scent": "Lys Blancs et Marbre Frais Poli",
+                "sound": "Le Doux Écho de Pas Lointains",
+                "touch": "Pierre Froide et Lisse comme du Verre",
+                "colors": [
+                    "#FFFFFF",
+                    "#FBBF24",
+                    "#1E40AF"
+                ]
+            },
+            "kit": {
+                "footwear": "Chaussures de ville (respectez le contexte)",
+                "photo": "La longue perspective de la cour",
+                "hour": "9h00 (pour l'éclat du marbre)"
+            },
+            "quote": {
+                "text": "Un homme est un rêve jusqu'à ce que son peuple en fasse une icône.",
+                "author": "Historien de la Médina"
+            },
+            "chronology": [
+                {
+                    "year": "1963",
+                    "title": "Le Premier Dôme",
+                    "description": "Début de la construction sur le site qui deviendrait le point focal de la silhouette de Monastir."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "L'Aile du Musée",
+                    "description": "La collection de livres privés du président est cachée dans l'aile arrière—la plupart des touristes la manquent complètement."
+                }
+            ],
+            "seasons": {
+                "spring": "Les jardins environnants sont en pleine floraison vibrante.",
+                "summer": "Le marbre blanc reste naturellement glacé même sous le soleil de plomb.",
+                "autumn": "Le dôme doré capture la lumière plus douce de la fin d'année méditerranéenne.",
+                "winter": "Une silhouette blanche majestueuse contre le gris de la saison des pluies."
+            },
+            "pledge": "Je me suis tenu dans l'ombre du dôme doré, j'ai ressenti le cœur de la nation, je fais partie de l'héritage."
+        },
+        "marina-twilight-escape": {
+            "title": "Évasion Crépusculaire à la Marina",
+            "subtitle": "Sérénité au bord des yachts",
+            "description": "Une promenade tranquille à travers les docks sophistiqués au coucher du soleil.",
+            "tags": [
+                "Luxury",
+                "Evening",
+                "Romantic"
+            ],
+            "facts": [
+                {
+                    "label": "Social",
+                    "value": "Vibrant"
+                },
+                {
+                    "label": "Comfort",
+                    "value": "High"
+                },
+                {
+                    "label": "Magic Hour",
+                    "value": "6:45 PM"
+                }
+            ],
+            "story": "La Marina de Monastir est l'endroit où la ville rencontre le monde. C'est un espace de yachts élégants, de drapeaux internationaux, et des meilleurs fruits de mer de la Méditerranée.\n\nAu coucher du soleil, les lumières des restaurants commencent à scintiller sur l'eau. C'est l'endroit idéal pour une 'passeggiata'—la promenade lente traditionnelle.\n\nElle représente le visage moderne et tourné vers l'extérieur de Monastir, tout en conservant cette hospitalité sahélienne essentielle.",
+            "sensory": {
+                "scent": "Grilled Sea Bream & Vanilla Gelato",
+                "sound": "The Clinking of Sailboat Masts",
+                "touch": "The Cool Evening Sea Breeze",
+                "colors": [
+                    "#1E40AF",
+                    "#FBBF24",
+                    "#FFFFFF"
+                ]
+            },
+            "kit": {
+                "footwear": "Stylish loafers or sandals",
+                "photo": "Sunset reflection on the marina water",
+                "hour": "Sunset"
+            },
+            "quote": {
+                "text": "The world ends at the harbor wall, and a new one begins in the Marina.",
+                "author": "Local Yacht Captain"
+            },
+            "chronology": [
+                {
+                    "year": "1980",
+                    "title": "A New Vision",
+                    "description": "The completion of the Marina complex, turning a salt marsh into a premier yachting destination."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "The Corner Café",
+                    "description": "Head to the very end of the north pier. There's a small bench where the view of the Ribat is unobstructed."
+                }
+            ],
+            "seasons": {
+                "spring": "Perfect for outdoor dining without the heat.",
+                "summer": "The heartbeat of the city's nightlife.",
+                "autumn": "Quiet, reflective, and beautifully lit.",
+                "winter": "A dramatic place to watch the storms roll in over the breakwater."
+            },
+            "pledge": "J'ai marché les docks argentés, j'ai partagé un sourire avec la mer, je suis chez moi à la Marina."
+        },
+        "medina-treasure-hunt": {
+            "title": "Chasse au Trésor dans la Médina",
+            "subtitle": "Labyrinthes du Sahel",
+            "description": "Se perdre dans les ruelles blanchies pour trouver le cœur artisanal de la ville.",
+            "story": "La Médina de Monastir est un organisme vivant. Derrière chaque porte bleue se cache une histoire potentielle. Vous pourriez trouver un artisan du cuir de troisième génération, une épicerie cachée, ou une cour tranquille remplie d'orangers.\n\nVous finirez par trouver le marché central, où les couleurs des olives fraîches et le parfum du jasmin convergent en une surcharge sensorielle.",
+            "pledge": "J'ai parcouru les ruelles, j'ai trouvé le cœur caché, je suis gardien des souks secrets."
+        },
+        "hammam-said-swim": {
+            "title": "Baignade Secrète de Hammam Said",
+            "subtitle": "Le Lagon de Cristal",
+            "description": "Un paradis liquide où l'eau est si claire qu'il semble nager dans la lumière.",
+            "story": "Il existe un coin tranquille de la côte où la Méditerranée montre ses véritables couleurs de diamant. L'eau ici est légendaire. Filtrée par les rochers de calcaire blanc, elle atteint une clarté qui fait paraître les bateaux comme s'ils flottaient dans l'air.\n\nLes légendes anciennes disent que ces eaux ont des propriétés curatives.",
+            "pledge": "Je me suis abandonné aux profondeurs turquoise, j'ai été purifié par la mer de diamants, je suis un enfant de Hammam Said."
+        },
+        "beach-solitude": {
+            "title": "Solitude de Plage",
+            "subtitle": "L'Horizon Sans Fin",
+            "description": "Des kilomètres de sable doré où seules vos empreintes existent, et la seule musique est la marée.",
+            "story": "Les plages sauvages de Monastir sont ses meilleurs secrets gardés. Loin des zones de villégiature, ces étendues de sable offrent un silence méditatif.\n\nC'est là où les dunes dorées rencontrent le plateau turquoise. Il n'y a pas de parasols ici, seulement le bois flotté occasionnel.",
+            "pledge": "J'ai laissé mes marques sur le sable doré, j'ai fixé le bleu infini, je suis une âme du rivage."
+        },
+        "ghdamsi-cave": {
+            "title": "Quête de la Grotte Ghdamsi",
+            "subtitle": "La Grotte Côtière Phénicienne",
+            "description": "Une ancienne grotte marine sculptée par le temps et la marée.",
+            "story": "La Grotte Ghdamsi est une cathédrale de pierre. Pour des siècles, elle a servi de repère pour les marins. La lumière se réfléchissant sur les parois intérieures crée une lueur bleue éthérée.\n\nTaillée dans les falaises calcaires de la péninsule de Monastir, cette grotte marine témoigne de la puissance des marées.",
+            "pledge": "J'ai marché la salle des géants de pierre, j'ai entendu le battement de cœur de la terre, je suis gardien de la grotte."
+        },
+        "cemetery-whispers": {
+            "title": "Murmures du Cimetière Marin",
+            "subtitle": "L'Étrangement Beau",
+            "description": "Un cimetière en colline surplombant la mer, où le silence et la beauté conspirent.",
+            "story": "Le cimetière marin de Monastir est unique au monde. Perché sur une hauteur surplombant la baie, ses tombes blanchies à la chaux scintillent au soleil. Les locaux appellent le vent marin qui traverse les cyprès 'les murmures des disparus'.",
+            "pledge": "J'ai contemplé le bord de la mémoire et de la mer, j'ai entendu les murmures, je porte la paix du cimetière dans mon cœur."
+        },
+        "museum-museum": {
+            "title": "Chroniques du Musée",
+            "subtitle": "Tracer les Racines du Pouvoir",
+            "description": "Une plongée dans les artefacts et l'histoire personnelle qui ont façonné la destinée d'une nation.",
+            "story": "Logé dans l'ancien Palais d'Été, ce musée offre un regard intime sur l'homme qui a mené la Tunisie à l'indépendance. De lettres personnelles aux cadeaux du monde entier, chaque pièce raconte une histoire de diplomatie.",
+            "pledge": "J'ai parcouru les couloirs du Palais d'Été, j'ai touché l'esprit de l'indépendance, je fais partie de l'histoire continue."
+        },
+        "olive-wood": {
+            "title": "Bois d'Olivier",
+            "subtitle": "Sculpté dans les Antiques Vergers",
+            "description": "L'âme des terres tunisiennes, magistralement sculptée en pièces d'art intemporel.",
+            "story": "Chaque pièce de bois d'olivier est unique, façonnée par le soleil et le sol du Sahel. Nos artisans lisent le grain d'arbres centenaires, créant de l'art fonctionnel qui apporte la chaleur du paysage tunisien.\n\nL'olivier est l'Arbre d'Or de la Tunisie.",
+            "pledge": "J'ai touché le grain des antiques vergers, j'ai ramené l'arbre d'or chez moi, je suis un protecteur de l'âme du Sahel."
+        },
+        "pottery-mastery": {
+            "title": "Poterie de Moknine",
+            "subtitle": "De la Terre et du Feu",
+            "description": "L'argile ancienne de Moknine, transformée en céramiques vibrantes.",
+            "story": "La poterie est le souffle de la terre. Dans le village de Moknine, le mouvement rythmique de la roue du potier est resté inchangé depuis des siècles. L'argile de Moknine est unique, récoltée dans les profondeurs de la terre du Sahel.",
+            "pledge": "J'ai touché l'argile crue du Sahel, j'ai assisté au feu transformant la terre en art, je suis gardien des antiques fours."
+        },
+        "chechia-heritage": {
+            "title": "Chéchias",
+            "subtitle": "La Couronne du Sahel",
+            "description": "L'iconique bonnet de feutre rouge, artisanal dans une tradition vieille de 600 ans.",
+            "story": "La Chéchia est plus qu'un chapeau; c'est une déclaration d'identité. Ce bonnet de feutre rouge iconique est le symbole de la culture tunisienne depuis plus de 600 ans.\n\nLe processus de feutrage est un art complexe, transmis de maître en maître.",
+            "pledge": "J'ai porté la couronne du Sahel, j'ai touché 600 ans de tradition, je fais partie de l'héritage Chéchia."
+        },
+        "fouta-heritage": {
+            "title": "Foutas",
+            "subtitle": "L'Essentiel du Hammam",
+            "description": "Coton léger et luxueux tisssé — le textile tunisien ultime.",
+            "story": "La Fouta est le textile le plus démocratique de Tunisie. Présente dans chaque hammam, sur chaque plage, c'est le grand égalisateur du Sahel. Sa légèreté et son absorbance sont inégalées.",
+            "pledge": "J'ai été enveloppé dans la chaleur du fil du Sahel, j'ai ramené la sagesse du hammam chez moi, je fais partie de l'histoire de la Fouta."
+        },
+        "copper-lamps": {
+            "title": "Lampes en Cuivre",
+            "subtitle": "Brillance Gravée à la Main",
+            "description": "Des lanternes en cuivre complexes qui transforment n'importe quelle pièce en ciel nord-africain.",
+            "story": "La lampe en cuivre est l'endroit où les mathématiques rencontrent la poésie. Chaque motif géométrique est un calcul précis de la façon dont la lumière voyagera.\n\nLe martelage et la gravure des feuilles de cuivre sont entièrement réalisés à la main.",
+            "pledge": "J'ai allumé l'étoile de cuivre, j'ai regardé les murs devenir un ciel, je porte la lumière du Sahel dans mon espace."
+        },
+        "sahel-embroidery": {
+            "title": "Broderie du Sahel",
+            "subtitle": "Travail d'Aiguille Délicat",
+            "description": "Chaque point est une phrase dans un langage visuel centenaire de couleur et de foi.",
+            "story": "La broderie du Sahel est un langage secret. Chaque motif—la grenade, la main, le poisson—porte une signification spécifique tissée dans la culture tunisienne depuis des siècles.",
+            "pledge": "J'ai suivi le fil de l'histoire du Sahel, j'ai honoré les mains qui l'ont créé, je suis gardien de l'art de l'aiguille."
+        },
+        "hammam-said-cove": {
+            "title": "Crique de Hammam Said",
+            "subtitle": "La Baie de Cristal Secrète",
+            "description": "Une baie cachée où l'eau turquoise rencontre le calcaire blanc.",
+            "story": "L'accès à la Crique de Hammam Said nécessite une courte randonnée. L'eau dans la crique est d'un bleu qui semble artificiellement amélioré. Les falaises de calcaire blanc reflètent le soleil.",
+            "pledge": "J'ai trouvé la baie secrète, j'ai nagé dans les eaux cristallines, je suis gardien du secret le plus précieux de Hammam Said."
+        },
+        "swani-beach": {
+            "title": "Plage Skanes",
+            "subtitle": "Le Tronçon Sauvage",
+            "description": "Un ruban de côte moins fréquenté où les dunes commencent et les sentiers touristiques se terminent.",
+            "story": "La Plage Skanes est l'anti-resort. Son état naturel de dunes et de rivages balayés par le vent est délibérément préservé, attirant ceux qui recherchent l'authenticité de la côte tunisienne.",
+            "pledge": "J'ai marché le tronçon sauvage, j'ai ressenti le vent immédiat, je suis ami du rivage indomptable."
+        },
+        "ghdamsi-coast": {
+            "title": "Côte de Ghdamsi",
+            "subtitle": "Rochers et Échos de Pêche",
+            "description": "Un promontoire rugueux de pierre du Sahel où les bateaux de pêche ont ancré depuis les Phéniciens.",
+            "story": "La Côte Ghdamsi est le visage de Monastir au travail. Ici, l'ancienne relation de la ville avec la mer est une réalité quotidienne. Le matin, l'air sent le diesel, le sel et la prise fraîche.",
+            "pledge": "Je me suis tenu sur l'antique promontoire, j'ai regardé la flotte revenir, je suis témoin du rythme éternel de la mer."
+        },
+        "old-port": {
+            "title": "Vieux Port",
+            "subtitle": "Le Quai Authentique des Pêcheurs",
+            "description": "L'âme ouvrière du front de mer de Monastir, où la prise est fraîche et les histoires sont vieilles.",
+            "story": "Pendant que la Marina éblouit avec ses yachts, le Vieux Port de Monastir est là où réside la véritable âme maritime de la ville. Le quai est le plus animé à l'aube, quand la flotte de nuit revient avec sa prise.",
+            "pledge": "Je me suis tenu parmi les pêcheurs à l'aube, j'ai mangé la prise du jour, je fais partie de l'histoire éternelle du Vieux Port."
+        },
+        "viewpoint-dune": {
+            "title": "Dune de Vue",
+            "subtitle": "Panoramas sur la Baie",
+            "description": "Une élévation naturelle qui offre une vue cinématique à 180° sur toute la baie de Monastir.",
+            "story": "C'est l'un des grands points de vue méconnus de la côte tunisienne. Du sommet de cette dune naturelle, tout l'arc de la baie de Monastir se déploie devant vous.",
+            "pledge": "J'ai grimpé au sommet de la baie, j'ai vu la ville entière étalée en bas, j'ai compris ce que signifie vivre ici."
+        },
+        "medina-alleys": {
+            "title": "Ruelles de la Médina",
+            "subtitle": "Rues Calmes et Portes Bleues",
+            "description": "Le labyrinthe blanchi à la chaux derrière le souk principal, où le vrai Monastir respire encore.",
+            "story": "La plupart des visiteurs de la Médina trouvent le marché central et repartent. Le vrai trésor est dans les ruelles plus calmes qui rayonnent vers l'extérieur. Ces ruelles sont une leçon de maître en architecture sahélienne.",
+            "pledge": "J'ai marché les rues calmes, j'ai admiré les portes bleues, j'ai entrevu l'âme privée de la ville."
+        },
+        "ribat-destination": {
+            "title": "Ribat de Monastir",
+            "subtitle": "Gardien de la Côte",
+            "description": "L'emblématique forteresse du VIIIe siècle qui veille sur Monastir depuis plus de 12 siècles.",
+            "story": "Le Ribat de Monastir est le symbole le plus iconique de la ville. Ses murs de grès doré témoignent de la montée et de la chute d'empires.",
+            "pledge": "Je me suis tenu devant les murs du Ribat, j'ai ressenti ses 1200 ans, je suis à jamais lié à cette sentinelle de pierre."
+        },
+        "mausoleum-destination": {
+            "title": "Mausolée Bourguiba",
+            "subtitle": "Monument au Père de la Nation",
+            "description": "Le lieu de repos final du fondateur de la Tunisie, un monument d'une beauté architecturale époustouflante.",
+            "story": "Le Mausolée Bourguiba est le joyau doré de la silhouette de Monastir. L'espace intérieur est un sanctuaire silencieux dédié à l'homme qui a aboli la monarchie.",
+            "pledge": "J'ai payé mes respects sous le dôme doré, je comprends l'histoire de cette nation, je porte son héritage en avant."
+        },
+        "beaches-destination": {
+            "title": "Plages de Monastir",
+            "subtitle": "Le Rivage Doré du Sahel",
+            "description": "Des kilomètres de plages propres et dorées le long de la péninsule de Monastir.",
+            "story": "Les plages de Monastir font partie des plus belles de la Méditerranée. La péninsule crée un abri naturel qui maintient les eaux calmes et les sables immaculés.",
+            "pledge": "J'ai marché les rivages dorés, j'ai nagé en Méditerranée, je suis un enfant de la côte de Monastir."
+        },
+        "marina-destination": {
+            "title": "Marina de Monastir",
+            "subtitle": "Le Phare du Sahel",
+            "description": "Une marina de yachting de classe mondiale qui sert de visage moderne de Monastir.",
+            "story": "La Marina de Monastir est l'endroit où l'héritage méditerranéen de la ville rencontre son présent cosmopolite.",
+            "pledge": "J'ai marché les docks argentés, j'ai regardé le phare guider la flotte, je suis chez moi à la Marina de Monastir."
+        },
+        "medina-destination": {
+            "title": "Vieille Médina",
+            "subtitle": "Le Quartier Historique Vivant",
+            "description": "Un centre-ville historique significatif, où passé et présent coexistent.",
+            "story": "La Médina de Monastir est l'un des quartiers historiques les mieux préservés de la côte nord-africaine. Protégée par des sections de ses murs du IXe siècle, c'est un labyrinthe compact.",
+            "pledge": "J'ai marché les rues anciennes, j'ai respiré l'air de mille ans, je fais partie de l'histoire vivante de la Médina."
+        },
+        "mosque-destination": {
+            "title": "Grande Mosquée de Monastir",
+            "subtitle": "Un Fondement de Foi",
+            "description": "L'ancienne mosquée de congrégation, l'une des plus anciennes d'Afrique du Nord.",
+            "story": "La Grande Mosquée de Monastir se dresse au cœur géographique et spirituel de la vieille ville. Sa fondation date du règne de la dynastie Aghlabide.",
+            "pledge": "Je me suis assis à l'ombre de l'antique cour, j'ai entendu l'appel du minaret, je respecte le fondement de la foi."
+        },
+        "museum-destination": {
+            "title": "Musée Bourguiba",
+            "subtitle": "Le Palais de l'Indépendance",
+            "description": "L'ancien Palais d'Été de Bourguiba, maintenant un musée dédié à la vie du président fondateur.",
+            "story": "Situé dans les jardins de l'ancien palais d'État à Skanes, le Musée Bourguiba offre un regard intime sur l'homme derrière la nation.",
+            "pledge": "J'ai parcouru les pièces du Palais d'Été, j'ai compris l'homme et le mythe, j'honore l'héritage de l'indépendance."
+        }
+    }
+}

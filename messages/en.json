@@ -1,0 +1,546 @@
+{
+    "Navbar": {
+        "explore": "Explore",
+        "attractions": "Attractions",
+        "secretSpots": "Secret Spots",
+        "crafts": "Crafts",
+        "planTrip": "Plan Trip",
+        "login": "Login"
+    },
+    "Search": {
+        "placeholder": "Search places, crafts, or secrets...",
+        "noResults": "No results found for",
+        "popular": "Popular Searches",
+        "esc": "Esc"
+    },
+    "HeroSlider": {
+        "title1": "Discover Monastir",
+        "title2": "Endless Beaches",
+        "title3": "Ribat Fortress",
+        "title4": "Luxury Marina",
+        "title5": "Authentic Markets",
+        "subtitle1": "Overview",
+        "subtitle2": "Beaches",
+        "subtitle3": "History",
+        "subtitle4": "Marina",
+        "subtitle5": "Markets"
+    },
+    "CTA": {
+        "bookYourTrip": "Book Your Trip"
+    },
+    "Discover": {
+        "journeyBegins": "The Journey Begins",
+        "chronicle": "The Chronicle",
+        "explorersKit": "Explorer's Kit",
+        "recommendedWear": "Recommended Wear",
+        "perfectShot": "Perfect Shot",
+        "goldenHour": "Golden Hour",
+        "scent": "The Scent",
+        "sound": "The Sound",
+        "touch": "The Touch",
+        "throughTime": "Through Time",
+        "evolution": "The evolution of a legend",
+        "insidersPath": "Insider's Path",
+        "exploreLikeNative": "Explore Like a Native",
+        "nextDiscovery": "Next Discovery",
+        "newStory": "A new story awaits you",
+        "seasonalPulse": "Seasonal Pulse",
+        "livingCycle": "The Living Cycle",
+        "soulPledge": "The Soul Pledge",
+        "signChronicle": "Sign the Chronicle",
+        "legacy": "You are now part of the legacy"
+    },
+    "TravelInfo": {
+        "titlePart1": "Plan Your",
+        "titlePart2": "Escape",
+        "description": "We've curated the best ways to reach and experience Monastir. Start your journey by finding the perfect flight.",
+        "findFlights": "Find Flights",
+        "departingFrom": "Departing From",
+        "arrivingAt": "Arriving At",
+        "travelDates": "Travel Dates",
+        "searchRates": "Search Best Rates",
+        "placeholderDepart": "Type city or airport...",
+        "handPickedStays": "Hand-Picked Stays",
+        "viewAllBooking": "View all properties on Booking.com",
+        "localTransport": "Local Transport",
+        "localTransportDesc": "Most spots in Monastir are reachable by yellow taxi for under $5. Safe, cheap, and always available.",
+        "giftingCulture": "Gifting Culture",
+        "giftingCultureDesc": "Visit the Old Medina for authentic pottery and leather. Bargaining is expected and part of the charm.",
+        "bestSunset": "Best Sunset",
+        "bestSunsetDesc": "Head to the Marina docks or the Cemetery sea-wall around 6:30 PM for the most iconic views."
+    },
+    "MysteryClub": {
+        "badge": "Exclusive Access",
+        "title": "Join the Secret Monastir Club",
+        "description": "Get our 'Hidden Gems' map, exclusive flight deals, and hand-picked hotel discounts delivered directly to your inbox.",
+        "placeholder": "Enter your email",
+        "button": "Get Access",
+        "successTitle": "You're in the Club!",
+        "successDescription": "Check your inbox for your Secret Map. Welcome to the elite of Monastir."
+    },
+    "Footer": {
+        "tagline": "Unveiling the hidden tales and timeless beauty of Tunisia's pearl. Your journey into the heart of the Sahel starts here.",
+        "explore": "Explore",
+        "usefulInfo": "Useful Info",
+        "stayInspired": "Stay Inspired",
+        "subscribeDesc": "Subscribe to receive travel tips and hidden gem alerts.",
+        "placeholder": "Your email",
+        "join": "Join",
+        "welcome": "Welcome to the Circle!",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "exploreDestinations": "Destinations",
+        "exploreWonders": "Hidden Wonders",
+        "exploreCrafts": "Local Crafts",
+        "exploreTravelGuide": "Travel Guide",
+        "visaReq": "Visa Requirements",
+        "howToGet": "How to get here",
+        "transport": "Transportation",
+        "weather": "Weather & Best Time",
+        "culture": "Culture & Ethics"
+    },
+    "Destinations": {
+        "title": "Destinations",
+        "subtitle": "for every bucket list",
+        "discoverMore": "Discover More →",
+        "ribat": "Ribat",
+        "ribatSub": "Ancient Ribat",
+        "mausoleum": "Mausoleum",
+        "mausoleumSub": "Bourguiba Mausoleum",
+        "beaches": "Beaches",
+        "beachesSub": "Golden Beaches",
+        "marina": "Marina",
+        "marinaSub": "The Pristine Harbor",
+        "medina": "Medina",
+        "medinaSub": "Old Medina",
+        "mosque": "Mosque",
+        "mosqueSub": "Great Mosque",
+        "museum": "Museum",
+        "museumSub": "Bourguiba Museum"
+    },
+    "Attractions": {
+        "title": "Attractions",
+        "subtitle": "worth a thousand stories",
+        "discover": "Discover",
+        "ribatDawn": "Ribat Dawn Patrol",
+        "mausoleumLegacy": "Bourguiba's Golden Legacy",
+        "marinaTwilight": "Marina Twilight Escape",
+        "medinaHunt": "Medina Treasure Hunt",
+        "hammamSwim": "Hammam Said Secret Swim",
+        "beachSolitude": "Beach Solitude",
+        "cemeteryWhispers": "Cemetery Sea Whispers",
+        "caveQuest": "Ghdamsi Cave Quest",
+        "museumChronicles": "Museum Chronicles"
+    },
+    "Wonders": {
+        "title": "Lesser Known",
+        "subtitle": "Secrets of the Salt City",
+        "discoverStory": "Discover story →",
+        "hammamCove": "Hammam Said Cove",
+        "hammamCoveSub": "The Secret Crystal Bay",
+        "swaniBeach": "Swani Beach",
+        "swaniBeachSub": "The Wilder Stretch",
+        "ghdamsiCoast": "Ghdamsi Coast",
+        "ghdamsiCoastSub": "Rocks & Fishing Echoes",
+        "oldPort": "Old Port",
+        "oldPortSub": "The Authentic Fishermen Quay",
+        "seaCemetery": "Sea Cemetery",
+        "seaCemeterySub": "Strangely Peaceful White Tombs",
+        "viewpointDune": "Viewpoint Dune",
+        "viewpointDuneSub": "Wide Bay Panoramas",
+        "medinaAlleys": "Medina Alleys",
+        "medinaAlleysSub": "Quiet Streets & Blue Doors"
+    },
+    "Crafts": {
+        "title": "Exquisite Crafts",
+        "subtitle": "of timeless tradition",
+        "exploreCraft": "Explore Craft →",
+        "oliveWood": "Olive Wood",
+        "oliveWoodSub": "Artisanal Carvings",
+        "pottery": "Moknine Pottery",
+        "potterySub": "Ancient Clay Mastery",
+        "chechia": "Chechia Hats",
+        "chechiaSub": "Traditional Heritage",
+        "fouta": "Fouta Towels",
+        "foutaSub": "Hammam Essentials",
+        "copper": "Copper Lamps",
+        "copperSub": "Hand-Engraved Brilliance",
+        "embroidery": "Sahel Embroidery",
+        "embroiderySub": "Delicate Needlework"
+    },
+    "DiscoverData": {
+        "ribat-dawn-patrol": {
+            "title": "Ribat Dawn Patrol",
+            "subtitle": "Guardian of the Mediterranean",
+            "description": "A pre-dawn journey to witness the first light touching the 8th-century battlements.",
+            "tags": [
+                "Photography",
+                "Spirituality",
+                "Quiet"
+            ],
+            "facts": [
+                {
+                    "label": "Vibe",
+                    "value": "Transcendent"
+                },
+                {
+                    "label": "Crowds",
+                    "value": "None"
+                },
+                {
+                    "label": "Difficulty",
+                    "value": "Early Bird"
+                }
+            ],
+            "story": "The Ribat of Monastir is arguably the most cinematic fortress in North Africa. At dawn, it's a completely different world.\n\nWalking the battlements as the first rays of the sun hit the golden ochre stone feels like walking through a film set from a different century. The silence is absolute, broken only by the sound of the sea and the flapping of the flags on the Nador tower.\n\nThis isn't just about a view; it's about a feeling of deep-time continuity. As the city below slowly wakes up, you have the privilege of seeing the peninsula exactly as the sentries of the 9th century did—clean, powerful, and eternal.",
+            "sensory": {
+                "scent": "Cold Salt Spray & Sun-Warmed Stone",
+                "sound": "The Rhythmic Flapping of the Nador Tower Flag",
+                "touch": "Smooth Sandstone at 4:30 AM",
+                "colors": [
+                    "#FBBF24",
+                    "#92400E",
+                    "#0EA5E9"
+                ]
+            },
+            "kit": {
+                "footwear": "Comfortable trainers for steep, worn stairs",
+                "photo": "Looking through a crenel toward the harbor",
+                "hour": "5:15 AM (Arrival)"
+            },
+            "quote": {
+                "text": "The sea doesn't have a clock, and at the Ribat, neither do you.",
+                "author": "Legendary Citadel Guard"
+            },
+            "chronology": [
+                {
+                    "year": "796 AD",
+                    "title": "The First Stone",
+                    "description": "Foundation of the Ribat as a defensive bastion for the newly Islamic North Africa."
+                },
+                {
+                    "year": "1978",
+                    "title": "Global Fame",
+                    "description": "The Ribat serves as the primary set for 'The Life of Brian', cementing its cinematic legacy."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "The Secret Niche",
+                    "description": "Find the small alcove on the second floor of the Nador tower—it's the only spot where the wind is completely silent."
+                }
+            ],
+            "seasons": {
+                "spring": "The stone is cool and the air carries a light jasmine scent from the Medina.",
+                "summer": "Essential to beat the 40-degree heat; the dawn is the only breathable hour.",
+                "autumn": "The most dramatic clouds frame the towers after the summer heat breaks.",
+                "winter": "A raw, powerful experience. The storms hit the walls with visceral energy."
+            },
+            "pledge": "I have seen the dawn on the fortress walls, I have heard the stones speak, I am a guardian of the Monastir soul."
+        },
+        "mausoleum-legacy": {
+            "title": "Bourguiba's Golden Legacy",
+            "subtitle": "Architecture of Independence",
+            "description": "A deep-dive into the symmetry and symbolism of the nation's most sacred modern monument.",
+            "tags": [
+                "Design",
+                "History",
+                "National"
+            ],
+            "facts": [
+                {
+                    "label": "Symmetry",
+                    "value": "Perfect"
+                },
+                {
+                    "label": "Material",
+                    "value": "Carrara Marble"
+                },
+                {
+                    "label": "Spirit",
+                    "value": "National"
+                }
+            ],
+            "story": "The Bourguiba Mausoleum is more than a tomb; it's a testament to the vision of a man who built a modern Tunisia from the ground up.\n\nArchitecturally, it's a marriage between the Ottoman traditions and the minimalist Sahel style. The white marble against the Mediterranean blue creates a visual harmony that is unmatched in the region. Every mosaic tile tells a story of the 3000-year history that led to the birth of the Republic.\n\nInside, the massive chandelier and the towering silence create a space for profound reflection on where we come from and where we are going. It is the city's highest point of national pride.",
+            "sensory": {
+                "scent": "White Lilies & Fresh Polished Marble",
+                "sound": "The Soft Echo of Distant Footsteps",
+                "touch": "Cold, Glass-Smooth Stone",
+                "colors": [
+                    "#FFFFFF",
+                    "#FBBF24",
+                    "#1E40AF"
+                ]
+            },
+            "kit": {
+                "footwear": "Dress shoes (respect the context)",
+                "photo": "The long courtyard perspective",
+                "hour": "9:00 AM (for the cleanest marble shine)"
+            },
+            "quote": {
+                "text": "A man is a dream until his people make him an icon.",
+                "author": "Medina Historian"
+            },
+            "chronology": [
+                {
+                    "year": "1963",
+                    "title": "The First Dome",
+                    "description": "Construction begins on the site that would become the focal point of Monastir's skyline."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "The Museum Wing",
+                    "description": "The president's private book collection is hidden in the back wing—most tourists miss it entirely."
+                }
+            ],
+            "seasons": {
+                "spring": "The surrounding gardens are in full, vibrant bloom.",
+                "summer": "The white marble stays naturally ice-cold even in the peak sun.",
+                "autumn": "The golden dome catches the softer light of the late Mediterranean year.",
+                "winter": "A stark, majestic white silhouette against the rainy season's gray."
+            },
+            "pledge": "I have stood in the shadow of the golden dome, I have felt the nation's heart, I am part of the legacy."
+        },
+        "marina-twilight-escape": {
+            "title": "Marina Twilight Escape",
+            "subtitle": "Yacht-Side Serenity",
+            "description": "A tranquil walk through the sophisticated docks as the day turns to blue hour.",
+            "tags": [
+                "Luxury",
+                "Evening",
+                "Romantic"
+            ],
+            "facts": [
+                {
+                    "label": "Social",
+                    "value": "Vibrant"
+                },
+                {
+                    "label": "Comfort",
+                    "value": "High"
+                },
+                {
+                    "label": "Magic Hour",
+                    "value": "6:45 PM"
+                }
+            ],
+            "story": "Monastir Marina is where the city meets the world. It’s a space of sleek white yachts, international flags, and some of the best seafood in the Mediterranean.\n\nAs the sun sets, the lights from the restaurants begin to glimmer on the water. It’s the perfect place for a ‘passeggiata’—the traditional slow walk. You’ll find locals and travelers alike enjoying a mint tea or a gelato while the masts of the sailboats chime softly in the breeze.\n\nIt represents the modern, outward-looking face of Monastir, while still retaining that essential Sahelian hospitality.",
+            "sensory": {
+                "scent": "Grilled Sea Bream & Vanilla Gelato",
+                "sound": "The Clinking of Sailboat Masts",
+                "touch": "The Cool Evening Sea Breeze",
+                "colors": [
+                    "#1E40AF",
+                    "#FBBF24",
+                    "#FFFFFF"
+                ]
+            },
+            "kit": {
+                "footwear": "Stylish loafers or sandals",
+                "photo": "Sunset reflection on the marina water",
+                "hour": "Sunset"
+            },
+            "quote": {
+                "text": "The world ends at the harbor wall, and a new one begins in the Marina.",
+                "author": "Local Yacht Captain"
+            },
+            "chronology": [
+                {
+                    "year": "1980",
+                    "title": "A New Vision",
+                    "description": "The completion of the Marina complex, turning a salt marsh into a premier yachting destination."
+                }
+            ],
+            "insider": [
+                {
+                    "title": "The Corner Café",
+                    "description": "Head to the very end of the north pier. There's a small bench where the view of the Ribat is unobstructed."
+                }
+            ],
+            "seasons": {
+                "spring": "Perfect for outdoor dining without the heat.",
+                "summer": "The heartbeat of the city's nightlife.",
+                "autumn": "Quiet, reflective, and beautifully lit.",
+                "winter": "A dramatic place to watch the storms roll in over the breakwater."
+            },
+            "pledge": "I have walked the silver docks, I have shared a smile with the sea, I am at home in the Marina."
+        },
+        "medina-treasure-hunt": {
+            "title": "Medina Treasure Hunt",
+            "subtitle": "Labyrinths of the Sahel",
+            "description": "Getting lost in the white-washed alleys to find the city's artisanal heart.",
+            "story": "The Medina of Monastir is a living organism. Unlike the massive souks of Tunis, this one feels intimate, clean, and surprisingly airy.\n\nBehind every blue door is a potential story. You might find a third-generation leather worker, a hidden spice shop, or a quiet courtyard filled with orange trees. The goal here isn't to find a specific shop, but to let the alleys guide you.\n\nYou'll eventually find the central market, where the colors of fresh olives and the scent of jasmine converge into a sensory overload that defines the Tunisian experience.",
+            "pledge": "I have threaded the needle of the Medina's alleys, I have found the hidden heart, I am a keeper of the secret souks."
+        },
+        "hammam-said-swim": {
+            "title": "Hammam Said Secret Swim",
+            "subtitle": "The Crystal Lagoon",
+            "description": "A liquid paradise where the water is so clear it feels like swimming in light itself.",
+            "story": "There is a quiet corner of the coast where the Mediterranean shows its true diamond colors. Hammam Said is a natural sanctuary, a place to leave the world behind and connect with the raw beauty of the Tunisian shore.\n\nThe water here is legend. Filtered by the white limestone rocks, it achieves a clarity that makes boats look like they are floating in the air. It is not just a place to swim; it is a place to be baptized by the sea.\n\nAncient legends say these waters have healing properties. Whether that's true or not, the feeling of the salt on your skin and the sun on your face in this hidden lagoon is a medicine that no pharmacy can provide.",
+            "pledge": "I have surrendered to the turquoise deep, I have been cleansed by the diamond sea, I am a child of Hammam Said."
+        },
+        "beach-solitude": {
+            "title": "Beach Solitude",
+            "subtitle": "The Endless Horizon",
+            "description": "Miles of golden sand where the only footsteps are your own, and the only music is the tide.",
+            "story": "Monastir's wilder beaches are its best-kept secrets. Far from the resort zones, these stretches of sand offer a meditative silence, allowing you to walk for hours with nothing but the rhythm of the waves as your companion.\n\nThis is where the golden dunes meet the turquoise shelf. There are no umbrellas here, only the occasional driftwood and the tracks of sea birds. It is a place of absolute horizontal beauty, where the sky and the sea conspire to make you feel like the only person on earth.\n\nAs you walk, the sand changes from fine white powder to a deep ochre. It is the perfect terrain for a 'Thinking Walk'—a space to untangle the mind and reconnect with the raw elements of the Sahel.",
+            "pledge": "I have left my marks on the golden sand, I have stared into the infinite blue, I am a soul of the shore."
+        },
+        "ghdamsi-cave": {
+            "title": "Ghdamsi Cave Quest",
+            "subtitle": "The Phoenician Coastal Cave",
+            "description": "An ancient sea-cave carved by time and tide, holding the whispers of prehistoric sailors.",
+            "story": "The Ghdamsi Cave is a cathedral of stone. For centuries, it has served as a landmark for sailors and a haunt for explorers. The light reflecting off the interior walls creates an ethereal blue glow that must be seen to be believed.\n\nCarved into the limestone cliffs of the Monastir peninsula, this sea cave is a testament to the power of the tides. At certain times of day, the sun hits the water at the entrance and projects dancing ripples onto the ceiling, creating a 'living' interior. It is quiet, cool, and ancient.\n\nExplorers have found prehistoric traces in the surrounding rocks, suggesting that this coast has been a haven for humanity since the dawn of time. Entering the cave feels like entering the memory of the earth itself.",
+            "pledge": "I have walked the hall of the stone giants, I have heard the earth's heartbeat, I am a keeper of the cave."
+        },
+        "cemetery-whispers": {
+            "title": "Cemetery Sea Whispers",
+            "subtitle": "The Strangely Beautiful",
+            "description": "A hilltop cemetery overlooking the sea, where silence and beauty conspire in rare harmony.",
+            "story": "The sea cemetery of Monastir is unlike any burial ground on earth. Perched on a rise overlooking the Gibraltar-blue bay, its white-washed tombs shimmer in the sun like salt crystals. It is a place where solemnity and beauty are inseparable.\n\nThe locals call the sea wind that moves through the cypresses the 'whispers of the departed'. On a still afternoon, with the sound of the distant waves and the wind moving through the stone markers, you will hear it too. It is a meditation on the extraordinary ordinariness of life, death, and the sea.\n\nIt is said that to visit the sea cemetery is to receive a gift of perspective—a reminder that all the urgency of modern life is just a footnote in the long story of the coast.",
+            "pledge": "I have stood at the edge of memory and the sea, I have heard the whispers, I carry the peace of the cemetery in my heart."
+        },
+        "museum-museum": {
+            "title": "Museum Chronicles",
+            "subtitle": "Tracing the Roots of Power",
+            "description": "A deep dive into the artifacts and personal history that shaped a nation's destiny.",
+            "story": "Housed in the former Summer Palace, this museum offers an intimate look at the man who led Tunisia to independence. From personal letters to world gifts, every room tells a story of diplomacy, struggle, and modern vision.\n\nThe collection includes rare photographs, formal state gifts from world leaders, and an extraordinary library that reveals the depth of Bourguiba's intellectual life. It is a monument to the idea that one man with a clear vision can change the course of a nation's history.\n\nWalking through the halls, you feel the weight of history, but also its lightness—the moments of joy and humor that humanize the icon.",
+            "pledge": "I have walked the halls of the Summer Palace, I have touched the spirit of independence, I am part of the continuing story."
+        },
+        "olive-wood": {
+            "title": "Olive Wood",
+            "subtitle": "Sculpted from Ancient Groves",
+            "description": "The soul of Tunisia's land, masterfully carved into timeless pieces of art.",
+            "story": "Each piece of olive wood is unique, shaped by the sun and the soil of the Sahel. Our artisans read the grain of trees that have stood for centuries, creating functional art that brings the warmth of the Tunisian landscape into your home.\n\nThe olive tree is the 'Golden Tree' of Tunisia. Known for its density and its spectacular marble-like grain, it requires a master's touch to carve. Each piece must be seasoned for years before it touches the chisel, ensuring that the soul of the tree is preserved forever.\n\nFrom honey spoons to massive sculpture-like bowls, olive wood is the ultimate sustainable craft. It is naturally antibacterial, incredibly durable, and it smells like the warm heart of the Mediterranean groves.",
+            "pledge": "I have touched the grain of the ancient groves, I have brought the golden tree into my home, I am a protector of the Sahel's soul."
+        },
+        "pottery-mastery": {
+            "title": "Moknine Pottery",
+            "subtitle": "Of Earth and Fire",
+            "description": "The ancient clay of Moknine, transformed into vibrant ceramics reflecting the colors of the coast.",
+            "story": "Pottery is the breath of the earth. In the nearby village of Moknine, the rhythmic motion of the potter's wheel has remained unchanged for centuries. Each vase and bowl is a testament to the enduring relationship between the artisan and the Tunisian soil.\n\nThe clay of Moknine is unique, harvested from deep within the Sahel earth. When fired in the traditional wood-burning ovens, it takes on a warm, porous texture that has been prized since Phoenician times. It is the art of the four elements: Earth (clay), Water (shaping), Air (drying), and Fire (kiln).\n\nModern Moknine pottery often features the 'blue of the coast'—a vibrant glaze that mirrors the Mediterranean sky. Owning a piece of Moknine pottery is like owning a fragment of the Tunisian horizon.",
+            "pledge": "I have touched the raw clay of the Sahel, I have witnessed fire transform earth into art, I am a guardian of the ancient kilns."
+        },
+        "chechia-heritage": {
+            "title": "Chechia Hats",
+            "subtitle": "The Crown of the Sahel",
+            "description": "The iconic red felt hat, hand-crafted by master felters in a tradition that spans 600 years.",
+            "story": "The Chechia is more than a hat; it is a declaration of identity. This iconic red felt cap has been the symbol of Tunisian culture for over 600 years, worn by sultans, presidents, and fishermen alike. To wear a Chechia is to wear history.\n\nThe felting process is an intricate art. Raw wool is transformed through a series of hot and cold baths, pressings, and shrinkings into a dense, silky felt that is incredibly durable. The final shaping and dyeing—using natural red dye—requires a master's steady hand.\n\nIn the old workshops of the Medina, you can still watch felters working just as their great-grandfathers did, maintaining a tradition that connects the tiny hats to the deep cultural memory of the Tunisian soul.",
+            "pledge": "I have placed the crown of the Sahel upon my head, I have touched 600 years of tradition, I am part of the Chechia legacy."
+        },
+        "fouta-heritage": {
+            "title": "Fouta Towels",
+            "subtitle": "The Hammam Essential",
+            "description": "Lightweight, luxurious woven cotton — the ultimate Tunisian textile, born from the hammam tradition.",
+            "story": "The Fouta is the most democratic of Tunisian textiles. Found in every hammam, on every beach, and draped over every shoulder in the heat of summer, it is the great equalizer of the Sahel. Its lightness and absorbency are unmatched by any modern towel.\n\nWoven on traditional looms in the workshops of the Sahel, a quality Fouta is made from 100% Egyptian or Tunisian long-staple cotton. The distinctive stripes and fringes are a signature of the Monastir region, each pattern carrying a subtle regional identity.\n\nA Fouta is the perfect travel companion—it rolls up to nothing, soaks up everything, and dries in the Mediterranean wind in minutes. It is the distilled practicality and beauty of the Tunisian way of life.",
+            "pledge": "I have been wrapped in the warmth of the Sahel's thread, I have carried the hammam's wisdom home, I am part of the Fouta's story."
+        },
+        "copper-lamps": {
+            "title": "Copper Lamps",
+            "subtitle": "Hand-Engraved Brilliance",
+            "description": "Intricate copper lanterns that turn any room into a slice of a North African night sky.",
+            "story": "The copper lamp is where mathematics meets poetry. Each geometric pattern is not simply decorative; it is a precise calculation of how light will travel, refract, and project when the flame or bulb ignites inside the lantern. The copper craftsman is, in essence, an architect of light.\n\nThe hammering, engraving, and piercing of the copper sheets is done entirely by hand, using techniques passed down from Andalusian craftsmen who settled in Tunisia centuries ago. Each lamp takes days to complete, and no two are identical.\n\nWhen lit, a Monastir copper lamp transforms a room. The ceiling becomes a planetarium of golden stars and crescent moons; the walls ripple with geometric constellations. It is not just a light source; it is a portal to another world.",
+            "pledge": "I have lit the copper star, I have watched the walls become a sky, I carry the light of the Sahel in my space."
+        },
+        "sahel-embroidery": {
+            "title": "Sahel Embroidery",
+            "subtitle": "Delicate Needlework",
+            "description": "Each stitch is a sentence in a centuries-old visual language of color, flora, and faith.",
+            "story": "Sahel embroidery is a secret language. Each motif—the pomegranate, the hand, the fish—carries a specific meaning that has been woven into the fabric of Tunisian culture for centuries. To read a piece of Sahel embroidery is to read the hopes, prayers, and stories of the women who created it.\n\nThe tradition is passed from mother to daughter in an unbroken chain. Young girls learn on small practice pieces, perfecting the 'cross-stitch', the 'satin-stitch', and the complex 'brick-stitch' before they are allowed to touch the household's ceremonial textiles.\n\nModern Monastir embroidery has evolved to include new color palettes and abstract designs, but the finest pieces still feature the traditional motifs that connect the work directly to its ancient origins in the art of the Sahel coast.",
+            "pledge": "I have followed the thread of the Sahel's story, I have honored the hands that created it, I am a guardian of the needle's art."
+        },
+        "hammam-said-cove": {
+            "title": "Hammam Said Cove",
+            "subtitle": "The Secret Crystal Bay",
+            "description": "A hidden bay where the turquoise water meets white limestone in a spectacle of natural perfection.",
+            "story": "Access to Hammam Said Cove requires a short hike, and that effort is the key to its magic. By the time you descend to the small pebble beach, you have already left the ordinary world behind.\n\nThe water in the cove is a shade of blue that seems artificially enhanced—a deep aquamarine in the center, shading to a luminous turquoise at the edges. The white limestone cliffs reflect the sun and heat, creating a microclimate that is warmer and calmer than the open coast.\n\nThis is not a beach for building sandcastles. It is a beach for lying still on the warm rocks, watching the light play on the water, and experiencing the profound luxury of having found something most people will never find.",
+            "pledge": "I have found the secret bay, I have swum in the crystal waters, I am a keeper of Hammam Said's most precious secret."
+        },
+        "swani-beach": {
+            "title": "Swani Beach",
+            "subtitle": "The Wilder Stretch",
+            "description": "A less-traveled ribbon of coast where the dunes begin and the tourist trails end.",
+            "story": "Swani Beach is the anti-resort. Its natural state of dunes, unkempt sea-grass, and windswept shores is deliberately preserved, attracting those who seek the authenticity of the Tunisian coast over the convenience of a sun-bed.\n\nThe walk from the road to the waterline takes you through a micro-ecosystem of sand dunes and coastal flora that is unique to the Monastir peninsula. You might disturb a flock of migratory birds or surprise a local fisherman mending his nets in the shade of a grounded dory.\n\nThe sea at Swani is unpredictable—some days as calm as a lake, other days turbulent and powerful. This wildness is the point. It reminds you that the Mediterranean is not just a backdrop; it is a living, breathing entity with its own moods and rules.",
+            "pledge": "I have walked the wild stretch, I have felt the unmediated wind, I am a friend of the untamed shore."
+        },
+        "ghdamsi-coast": {
+            "title": "Ghdamsi Coast",
+            "subtitle": "Rocks & Fishing Echoes",
+            "description": "A rugged promontory of Sahel stone where fishing boats have anchored since the Phoenicians.",
+            "story": "The Ghdamsi Coast is the face of working Monastir. Here, the city's ancient relationship with the sea is not a museum exhibit but a daily reality. In the early morning, the air smells of diesel, salt, and fresh catch, and the sound is the rhythmic creak of wooden boats being prepared for another day at sea.\n\nThe coastline itself is a geological marvel. The limestone has been sculpted by centuries of wave action into dramatic formations—natural arches, sea stacks, and tidal pools that create a world-class environment for natural observation.\n\nSitting on the rocks at Ghdamsi as the fishing fleet returns at dawn is one of the most authentic and moving experiences Monastir can offer. It is a connection to a way of life that has remained essentially unchanged for three thousand years.",
+            "pledge": "I have stood on the ancient promontory, I have watched the fleet return, I am a witness to the eternal rhythm of the sea."
+        },
+        "old-port": {
+            "title": "Old Port",
+            "subtitle": "The Authentic Fishermen Quay",
+            "description": "The working soul of Monastir's waterfront, where the catch is fresh and the stories are old.",
+            "story": "While the Marina dazzles with its yachts and restaurants, the Old Port of Monastir is where the city's true maritime soul resides. This is a working harbor, functional and unadorned, where the fishermen have docked their boats since before the current city was built.\n\nThe quay is busiest at dawn, when the night fleet returns with its catch. The atmosphere is a sensory feast: the crates of silver fish, the shouting of the traders, the smell of strong coffee from the portside cafes. It is chaotic, joyful, and profoundly alive.\n\nSpending a morning at the Old Port, buying fish directly from a fisherman and watching the city wake up around this ancient ritual, is one of the most authentic travel experiences available in the entire region.",
+            "pledge": "I have stood among the fishermen at dawn, I have eaten the catch of the day, I am part of the Old Port's eternal story."
+        },
+        "viewpoint-dune": {
+            "title": "Viewpoint Dune",
+            "subtitle": "Wide Bay Panoramas",
+            "description": "A natural sandy rise that offers a cinematic, 180-degree view of the entire Monastir bay.",
+            "story": "This is one of the great, unsung viewpoints of the Tunisian coast. From the crest of this natural dune, the entire arc of the Monastir bay unfolds before you, from the white dome of the Bourguiba Mausoleum on one side to the distant towers of the Ribat on the other.\n\nAt sunset, the panorama becomes something else entirely. The quality of the light on the Mediterranean at this hour—the way it turns the white buildings gold, the water silver, and the sky a deep, impossible blue—is the kind of scene that makes you reach for a camera and then realize that some things cannot be captured.\n\nThe dune itself is a comfortable, natural amphitheater. Locals bring blankets in the evening to watch the city transform from day to night, a practice that is both a social ritual and a quiet celebration of where they live.",
+            "pledge": "I have climbed to the top of the bay, I have seen the whole city laid out below me, I have understood what it means to live here."
+        },
+        "medina-alleys": {
+            "title": "Medina Alleys",
+            "subtitle": "Quiet Streets & Blue Doors",
+            "description": "The whitewashed labyrinth behind the main souk, where the real Monastir still breathes.",
+            "story": "Most visitors to the Medina find the central market and turn back. The real treasure, however, is in the quieter alleys that radiate outward from the commercial heart—the residential streets where the city's everyday life unfolds at its own unhurried pace.\n\nThese alleys are a masterclass in Sahel architecture. The whitewash is thick and fresh, the doors are a deep Tunisian blue, and the occasional courtyard, glimpsed through a half-open gate, reveals a world of mosaic fountains and orange trees. It is a visual language of privacy and beauty.\n\nThe best time to walk these streets is in the early afternoon, when the activity slows and the light is strongest. You might hear a radio playing Om Kalthoum from behind a closed shutter, or smell the distinctive anise of a slowly cooking tajine. This is the living, breathing heart of Monastir.",
+            "pledge": "I have walked the quiet streets, I have admired the blue doors, I have glimpsed the private soul of the city."
+        },
+        "ribat-destination": {
+            "title": "Ribat of Monastir",
+            "subtitle": "Guardian of the Coast",
+            "description": "The iconic 8th-century fortress that has watched over Monastir for over 12 centuries.",
+            "story": "The Ribat of Monastir is the city's most iconic symbol. Rising from the seafront with an authority that 1200 years of history provides, it is at once a fortress, a monastery, and a film set. Its golden sandstone walls have witnessed the rise and fall of empires, the arrival of conquerors, and the birth of a nation.\n\nToday, the Ribat serves as the city's greatest cultural treasure. Its museum houses Islamic art and artifacts, its courtyards host open-air concerts, and its towers provide the most iconic views of the Monastir bay.",
+            "pledge": "I have stood before the Ribat's walls, I have felt its 1200 years, I am forever connected to this stone sentinel of the sea."
+        },
+        "mausoleum-destination": {
+            "title": "Bourguiba Mausoleum",
+            "subtitle": "Monument to a Nation's Father",
+            "description": "The final resting place of Tunisia's founder, a monument of stunning architectural beauty.",
+            "story": "The Bourguiba Mausoleum stands as the golden centerpiece of Monastir's skyline. Its twin minarets, its luminous dome, and the avenue of palms that leads to its entrance make it one of the most architecturally significant buildings in North Africa.\n\nInside, the space is a hushed sanctuary dedicated to the man who abolished the monarchy, established the first modern constitution in the Arab world, and set Tunisia on the path to modernity. The scale is designed to inspire awe, and it succeeds.",
+            "pledge": "I have paid my respects at the golden dome, I understand the story of this nation, I carry its legacy forward."
+        },
+        "beaches-destination": {
+            "title": "Monastir Beaches",
+            "subtitle": "The Golden Sahel Shore",
+            "description": "Miles of clean, golden beaches stretching along the Monastir peninsula.",
+            "story": "The beaches of Monastir are among the finest in the Mediterranean. The Monastir peninsula creates a natural shelter that keeps the waters calm and the sands pristine. From the developed resort beaches near Skanes to the wilder stretches near Hammam Said, the coastline offers something for every type of beach lover.\n\nThe sand is a distinctive warm golden color, coarser than the fine white sand of some Mediterranean destinations, but with a texture that holds warmth and provides a perfect base for walking or building structures.",
+            "pledge": "I have walked the golden shores, I have swum in the Mediterranean, I am a child of the Monastir coast."
+        },
+        "marina-destination": {
+            "title": "Monastir Marina",
+            "subtitle": "The Lighthouse of the Sahel",
+            "description": "A world-class yachting marina that serves as the modern face of Monastir.",
+            "story": "The Monastir Marina is where the city's ancient Mediterranean heritage meets its cosmopolitan present. The harbor is designed to be walked, with a wide promenade, excellent restaurants, and the ever-changing spectacle of international yachts coming and going.\n\nAt the marina's heart is the famous lighthouse, one of the most photographed structures in Tunisia. Its white tower against the blue sky and the gleaming white yacht hulls creates a composition of pure Mediterranean beauty.",
+            "pledge": "I have walked the silver docks, I have watched the lighthouse guide the fleet, I am at home in the Monastir Marina."
+        },
+        "medina-destination": {
+            "title": "Old Medina",
+            "subtitle": "The Living Historic Quarter",
+            "description": "A UNESCO-significant ancient city center, where the past and present coexist.",
+            "story": "The Medina of Monastir is one of the most well-preserved historic quarters on the North African coast. Protected by sections of its original 9th-century walls, it is a compact and easily navigable labyrinth of craft workshops, spice markets, and residential streets.\n\nUnlike the large, commercialized medinas of Tunis or Sfax, Monastir's medina retains an intimate, lived-in quality. Residents still cook in the communal ovens, wash at the public fountains, and socialize at the tiny cafes that have served the same mint tea for generations.",
+            "pledge": "I have walked the ancient streets, I have breathed the air of a thousand years, I am a part of the Medina's living story."
+        },
+        "mosque-destination": {
+            "title": "Great Mosque of Monastir",
+            "subtitle": "A Foundation of Faith",
+            "description": "The ancient congregational mosque, one of the oldest and most important in North Africa.",
+            "story": "The Great Mosque of Monastir stands at the geographic and spiritual heart of the old city. Its foundation dates to the reign of the Aghlabid dynasty, and it has been expanded and restored over the centuries without losing its essential simplicity and power.\n\nThe mosque's courtyard is a masterpiece of proportion. The arcaded gallery, the ancient sundial, and the minaret that has called the faithful to prayer since the 9th century create an atmosphere of deep, architectural harmony.",
+            "pledge": "I have sat in the shade of the ancient courtyard, I have heard the minaret's call, I respect the foundation of faith."
+        },
+        "museum-destination": {
+            "title": "Bourguiba Museum",
+            "subtitle": "The Palace of Independence",
+            "description": "The former Summer Palace of Bourguiba, now a museum dedicated to the life of Tunisia's founding president.",
+            "story": "Set within the grounds of the former state palace at Skanes, the Bourguiba Museum offers a uniquely intimate look at the man behind the nation. The collection spans his entire public and private life—from his early years as a nationalist lawyer to his 30 years as President of the Republic.\n\nThe personal items on display—the presidential wardrobe, the state gifts from foreign leaders, the private photographs and letters—create a portrait of a man who was simultaneously larger-than-life and deeply human.",
+            "pledge": "I have walked through the rooms of the Summer Palace, I have understood the man and the myth, I honor the legacy of independence."
+        }
+    }
+}
