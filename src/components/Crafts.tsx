@@ -19,49 +19,83 @@ export default function Crafts() {
         { title: t('embroidery'), subtitle: t('embroiderySub'), image: "/Exquisite Crafts/Sahel Embroidery.webp", href: `/${locale}/discover/crafts/sahel-embroidery` },
     ];
 
-    // We duplicate the list to create a seamless loop
-    const extendedCrafts = [...crafts, ...crafts, ...crafts];
-    const [currentIndex, setCurrentIndex] = useState(crafts.length);
-    const [isAnimating, setIsAnimating] = useState(false);
+    const extendedCrafts = Array(12).fill(crafts).flat();
+
+    const [currentIndex, setCurrentIndex] = useState(crafts.length * 6);
     const [isHovered, setIsHovered] = useState(false);
+    const [isSnapping, setIsSnapping] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    const [autoDelay, setAutoDelay] = useState(5000);
+    const manualTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+    useEffect(() => {
+        setIsMounted(true);
+        setWindowWidth(window.innerWidth);
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const nextSlide = useCallback(() => {
-        if (isAnimating) return;
+        if (isSnapping) return;
         setCurrentIndex((prev) => prev + 1);
-    }, [isAnimating]);
+    }, [isSnapping]);
 
     const prevSlide = useCallback(() => {
-        if (isAnimating) return;
+        if (isSnapping) return;
         setCurrentIndex((prev) => prev - 1);
-    }, [isAnimating]);
+    }, [isSnapping]);
 
-    // Handle the infinite loop jump
-    useEffect(() => {
-        if (currentIndex >= crafts.length * 2) {
-            const timer = setTimeout(() => {
-                setIsAnimating(false);
-                setCurrentIndex(crafts.length);
-            }, 1200);
-            return () => clearTimeout(timer);
+    const handleManualInteraction = useCallback(() => {
+        setAutoDelay(30000);
+        if (manualTimerRef.current) clearTimeout(manualTimerRef.current);
+        manualTimerRef.current = setTimeout(() => {
+            setAutoDelay(5000);
+        }, 30000);
+    }, []);
+
+    const handleAnimationComplete = () => {
+        if (currentIndex >= crafts.length * 9 || currentIndex <= crafts.length * 3) {
+            setIsSnapping(true);
+            const normalizedIndex = (currentIndex % crafts.length) + (crafts.length * 6);
+            setCurrentIndex(normalizedIndex);
+        } else {
+            setIsSnapping(false);
         }
-        if (currentIndex < crafts.length) {
-            const timer = setTimeout(() => {
-                setIsAnimating(false);
-                setCurrentIndex(crafts.length * 2 - 1);
-            }, 1200);
-            return () => clearTimeout(timer);
-        }
-    }, [currentIndex, crafts.length]);
+    };
 
     useEffect(() => {
-        if (!isHovered) {
-            const interval = setInterval(nextSlide, 7000);
-            return () => clearInterval(interval);
-        }
-    }, [nextSlide, isHovered]);
+        if (isHovered || isSnapping || !isMounted) return;
+
+        const timer = setTimeout(() => {
+            nextSlide();
+        }, autoDelay);
+
+        return () => clearTimeout(timer);
+    }, [currentIndex, isHovered, isSnapping, autoDelay, nextSlide, isMounted]);
+
+    const transition = isSnapping
+        ? { duration: 0 } as const
+        : { type: "spring" as const, stiffness: 300, damping: 35, mass: 1 } as const;
+
+    const step = windowWidth < 768 ? 160 + 16 : 300 + 32;
+    const centerOffset = isMounted ? (windowWidth / 2) - ((windowWidth < 768 ? 160 : 300) / 2) : 0;
+
+    // Prevent hydration mismatch by using isMounted
+    if (!isMounted) {
+        return (
+            <section id="crafts" className="relative py-24 md:py-48 bg-black min-h-screen">
+                <div className="flex justify-center items-center h-full">
+                    <div className="w-12 h-12 border-4 border-[#FBBF24] border-t-transparent rounded-full animate-spin"></div>
+                </div>
+            </section>
+        );
+    }
 
     return (
-        <section id="crafts" className="relative py-24 md:py-48 px-2 md:px-12 overflow-hidden min-h-screen flex flex-col justify-center">
+        <section id="crafts" className="relative py-24 md:py-48 px-0 overflow-hidden min-h-screen flex flex-col justify-center">
             {/* Cinematic Background */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <Image
@@ -83,59 +117,56 @@ export default function Crafts() {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >
-                <h2 className="text-4xl md:text-8xl lg:text-9xl font-black uppercase tracking-[0.1em] bg-gradient-to-r from-[#FBBF24] via-[#F5F5DC] to-[#96611F] bg-clip-text text-transparent drop-shadow-4xl mb-4 md:mb-6 leading-none">
+                <h2 className="text-4xl md:text-8xl lg:text-9xl font-black uppercase tracking-[0.1em] bg-gradient-to-r from-[#FBBF24] via-[#F5F5DC] to-[#96611F] bg-clip-text text-transparent drop-shadow-4xl mb-4 md:mb-6 leading-none text-center">
                     {t('title')}
                 </h2>
-                <p className="text-lg md:text-3xl text-white font-light tracking-widest uppercase italic bg-black/20 backdrop-blur-sm inline-block px-6 py-1.5 md:px-8 md:py-2 rounded-full">
-                    {t('subtitle')}
-                </p>
+                <div className="flex justify-center">
+                    <p className="text-lg md:text-3xl text-white font-light tracking-widest uppercase italic bg-black/20 backdrop-blur-sm inline-block px-6 py-1.5 md:px-8 md:py-2 rounded-full text-center">
+                        {t('subtitle')}
+                    </p>
+                </div>
             </motion.div>
 
-            {/* Sliding Track Viewport - Now with swipe detection */}
+            {/* Sliding Track Viewport */}
             <div
                 dir="ltr"
-                className="relative max-w-7xl mx-auto overflow-hidden px-2"
+                className="relative cursor-grab active:cursor-grabbing max-w-[100vw] overflow-visible"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <motion.div
                     className="flex gap-4 md:gap-8"
                     drag="x"
-                    dragConstraints={{ left: -10000, right: 10000 }}
+                    dragConstraints={{ left: -20000, right: 20000 }}
+                    dragElastic={1}
                     onDragEnd={(_e, { offset }) => {
-                        if (offset.x < -50) nextSlide();
-                        else if (offset.x > 50) prevSlide();
+                        if (offset.x < -30) nextSlide();
+                        else if (offset.x > 30) prevSlide();
+                        handleManualInteraction();
                     }}
-                    animate={{ x: -(currentIndex * (typeof window !== 'undefined' && window.innerWidth < 768 ? 200 + 16 : 296 + 32)) }}
-                    transition={{
-                        duration: 0.8,
-                        ease: [0.23, 1, 0.32, 1], // More energetic ease
-                    }}
-                    onAnimationStart={() => setIsAnimating(true)}
-                    onAnimationComplete={() => setIsAnimating(false)}
+                    animate={{ x: -(currentIndex * step) + centerOffset }}
+                    transition={transition}
+                    onAnimationComplete={handleAnimationComplete}
                 >
                     {extendedCrafts.map((craft, index) => (
                         <motion.div
                             key={`${craft.title}-${index}`}
-                            className="flex-none w-[200px] md:w-[296px] h-[45vh] md:h-[65vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/10 hover:border-[#FBBF24] transition-all duration-500 group relative bg-black"
-                            whileHover={{ scale: 1.05, y: -15 }}
+                            className="flex-none w-40 md:w-[300px] h-[45vh] md:h-[65vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/10 hover:border-[#FBBF24] transition-all duration-500 group relative bg-black"
+                            whileHover={{ scale: 1.02, y: -5 }}
                             whileTap={{ scale: 0.98 }}
                         >
                             <Image
                                 src={craft.image}
                                 alt={craft.title}
                                 fill
-                                className="object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-1000 pointer-events-none opacity-80 group-hover:opacity-100"
+                                className="object-cover group-hover:scale-110 transition-transform duration-1000 pointer-events-none opacity-80 group-hover:opacity-100"
                             />
 
-                            {/* Dynamic Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-all duration-500" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10" />
 
-                            <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10 text-white z-10">
-                                <motion.div
-                                    className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
-                                >
-                                    <h3 className="text-xl md:text-3xl font-black drop-shadow-2xl mb-1 uppercase tracking-tight leading-none italic">
+                            <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10 text-white z-20">
+                                <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                    <h3 className="text-xl md:text-3xl font-black drop-shadow-2xl mb-1 uppercase tracking-tight leading-none italic text-white">
                                         {craft.title}
                                     </h3>
                                     <p className="text-[#FBBF24] text-[10px] md:text-xs uppercase tracking-[0.3em] font-black mb-6">
@@ -144,54 +175,61 @@ export default function Crafts() {
 
                                     <Link href={craft.href}>
                                         <motion.button
-                                            className="w-full py-3 md:py-4 bg-gradient-to-r from-[#FBBF24] to-[#96611F] text-black font-black text-[10px] md:text-xs uppercase tracking-[0.2em] rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.4)] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:shadow-[#FBBF24]/40 active:scale-95"
+                                            className="w-full py-3 md:py-4 bg-gradient-to-r from-[#FBBF24] to-[#96611F] text-black font-black text-[10px] md:text-xs uppercase tracking-[0.2em] rounded-xl shadow-xl hover:shadow-[#FBBF24]/40 active:scale-95 flex items-center justify-center gap-2"
                                         >
                                             {t('exploreCraft')}
+                                            <span>→</span>
                                         </motion.button>
                                     </Link>
-                                </motion.div>
+                                </div>
                             </div>
-
-                            {/* Energetic Glow Effect on Hover */}
-                            <div className="absolute -inset-2 bg-[#FBBF24]/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                         </motion.div>
                     ))}
                 </motion.div>
             </div>
 
-            {/* Bottom Controls */}
-            <div className="flex justify-center items-center space-x-8 md:space-x-12 mt-12 md:mt-24 relative z-20">
+            {/* Navigation Controls */}
+            <div className="flex justify-center items-center space-x-6 md:space-x-12 mt-12 md:mt-20 relative z-20">
                 <motion.button
-                    onClick={prevSlide}
-                    className="p-3 md:p-5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl text-[#FBBF24] hover:bg-white/10 shadow-2xl transition-all"
-                    whileHover={{ scale: 1.1, x: -5 }}
-                    whileTap={{ scale: 0.95 }}
+                    onClick={() => { prevSlide(); handleManualInteraction(); }}
+                    className="p-3 md:p-5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-3xl text-[#FBBF24] hover:bg-white/10 transition-all shadow-2xl"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                 >
-                    <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </motion.button>
 
-                {/* Progress Indicator */}
-                <div className="flex gap-2">
-                    {crafts.map((_, i) => (
-                        <div
-                            key={i}
-                            className={`h-1 transition-all duration-500 rounded-full ${currentIndex % crafts.length === i ? 'w-8 bg-[#FBBF24]' : 'w-2 bg-white/20'}`}
-                        />
-                    ))}
+                <div className="relative w-32 md:w-48 h-1 bg-white/10 rounded-full overflow-hidden">
+                    <motion.div
+                        className="absolute inset-y-0 left-0 bg-[#FBBF24] rounded-full"
+                        animate={{
+                            width: `${((currentIndex % crafts.length) / (crafts.length - 1)) * 100}%`
+                        }}
+                        transition={{ type: "spring", stiffness: 100, damping: 20 }}
+                    />
                 </div>
 
                 <motion.button
-                    onClick={nextSlide}
-                    className="p-3 md:p-5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl text-[#FBBF24] hover:bg-white/10 shadow-2xl transition-all"
-                    whileHover={{ scale: 1.1, x: 5 }}
-                    whileTap={{ scale: 0.95 }}
+                    onClick={() => { nextSlide(); handleManualInteraction(); }}
+                    className="p-3 md:p-5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-3xl text-[#FBBF24] hover:bg-white/10 transition-all shadow-2xl"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                 >
-                    <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </motion.button>
+            </div>
+
+            <div className="absolute bottom-0 left-0 w-full h-1 z-50">
+                <Image
+                    src="/section-footer.webp"
+                    alt=""
+                    fill
+                    className="object-cover"
+                />
             </div>
         </section>
     );

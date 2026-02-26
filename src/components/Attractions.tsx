@@ -10,7 +10,6 @@ export default function Attractions() {
     const t = useTranslations('Attractions');
     const locale = useLocale();
 
-    // Original list from file, now translated
     const stories = [
         { title: t('ribatDawn'), image: "/attractions/Ribat Dawn Patrol.webp", href: `/${locale}/discover/attractions/ribat-dawn-patrol` },
         { title: t('mausoleumLegacy'), image: "/attractions/Bourguibas Golden Legacy.webp", href: `/${locale}/discover/attractions/mausoleum-legacy` },
@@ -23,16 +22,24 @@ export default function Attractions() {
         { title: t('museumChronicles'), image: "/attractions/bourguiba meusiem.webp", href: `/${locale}/discover/attractions/museum-museum` },
     ];
 
-    // Triple the list for a "conveyor belt" effect
-    const extendedStories = [...stories, ...stories, ...stories];
+    const extendedStories = Array(10).fill(stories).flat();
 
-    // Start at the beginning of the middle set
-    const [currentIndex, setCurrentIndex] = useState(stories.length);
+    const [currentIndex, setCurrentIndex] = useState(stories.length * 5);
     const [isHovered, setIsHovered] = useState(false);
     const [isSnapping, setIsSnapping] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     const [autoDelay, setAutoDelay] = useState(5000);
     const manualTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+    useEffect(() => {
+        setIsMounted(true);
+        setWindowWidth(window.innerWidth);
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const nextSlide = useCallback(() => {
         if (isSnapping) return;
@@ -53,33 +60,40 @@ export default function Attractions() {
     }, []);
 
     const handleAnimationComplete = () => {
-        if (currentIndex >= stories.length * 2) {
+        if (currentIndex >= stories.length * 7 || currentIndex <= stories.length * 3) {
             setIsSnapping(true);
-            setCurrentIndex(currentIndex - stories.length);
-        } else if (currentIndex < stories.length) {
-            setIsSnapping(true);
-            setCurrentIndex(currentIndex + stories.length);
+            const normalizedIndex = (currentIndex % stories.length) + (stories.length * 5);
+            setCurrentIndex(normalizedIndex);
         } else {
             setIsSnapping(false);
         }
     };
 
     useEffect(() => {
-        if (isHovered || isSnapping) return;
+        if (isHovered || isSnapping || !isMounted) return;
 
         const timer = setTimeout(() => {
             nextSlide();
         }, autoDelay);
 
         return () => clearTimeout(timer);
-    }, [currentIndex, isHovered, isSnapping, autoDelay, nextSlide]);
+    }, [currentIndex, isHovered, isSnapping, autoDelay, nextSlide, isMounted]);
 
     const transition = isSnapping
         ? { duration: 0 } as const
         : { type: "spring" as const, stiffness: 300, damping: 35, mass: 1 } as const;
 
+    const step = windowWidth < 768 ? 160 + 16 : 320 + 32;
+    const centerOffset = isMounted ? (windowWidth / 2) - ((windowWidth < 768 ? 160 : 320) / 2) : 0;
+
+    if (!isMounted) {
+        return (
+            <section id="attractions" className="relative py-24 md:py-48 bg-black min-h-screen" />
+        );
+    }
+
     return (
-        <section id="attractions" className="relative py-24 md:py-48 px-2 md:px-12 overflow-hidden min-h-screen flex flex-col justify-center">
+        <section id="attractions" className="relative py-24 md:py-48 px-0 overflow-hidden min-h-screen flex flex-col justify-center">
             {/* Background Container */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <Image
@@ -102,7 +116,7 @@ export default function Attractions() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-3xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-[#FBBF24] via-white to-[#96611F] bg-clip-text text-transparent drop-shadow-2xl uppercase tracking-[0.15em] mb-2">
+                    <h2 className="text-3xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-[#FBBF24] via-white to-[#96611F] bg-clip-text text-transparent drop-shadow-2xl uppercase tracking-[0.15em] mb-2 leading-none">
                         {t('title')}
                     </h2>
                     <p className="text-sm md:text-2xl text-white/40 font-light tracking-[0.4em] md:tracking-[0.6em] uppercase italic">
@@ -110,23 +124,24 @@ export default function Attractions() {
                     </p>
                 </motion.div>
 
-                {/* The Slider Reel - Now with swipe detection */}
+                {/* The Slider Reel */}
                 <div
                     dir="ltr"
-                    className="relative cursor-grab active:cursor-grabbing px-2 max-w-[100vw] overflow-visible"
+                    className="relative cursor-grab active:cursor-grabbing max-w-[100vw] overflow-visible"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <motion.div
                         className="flex gap-4 md:gap-8"
                         drag="x"
-                        dragConstraints={{ left: -10000, right: 10000 }}
+                        dragConstraints={{ left: -20000, right: 20000 }}
+                        dragElastic={1}
                         onDragEnd={(_e, { offset }) => {
-                            if (offset.x < -50) nextSlide();
-                            else if (offset.x > 50) prevSlide();
+                            if (offset.x < -40) nextSlide();
+                            else if (offset.x > 40) prevSlide();
                             handleManualInteraction();
                         }}
-                        animate={{ x: -(currentIndex * (typeof window !== 'undefined' && window.innerWidth < 768 ? 160 + 16 : 320 + 32)) }}
+                        animate={{ x: -(currentIndex * step) + centerOffset }}
                         transition={transition}
                         onAnimationComplete={handleAnimationComplete}
                     >

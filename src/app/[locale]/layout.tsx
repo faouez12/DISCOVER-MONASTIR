@@ -43,25 +43,19 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
         <Script
           id="emerald-tp"
+          src="https://emrldtp.cc/NTAyNzM2.js?t=502736"
           strategy="beforeInteractive"
           data-noptimize="1"
           data-cfasync="false"
           data-wpfc-render="false"
-        >
-          {`
-            (function () {
-                var script = document.createElement("script");
-                script.async = 1;
-                script.src = 'https://emrldtp.cc/NTAyNzM2.js?t=502736';
-                document.head.appendChild(script);
-            })();
-          `}
-        </Script>
+        />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
