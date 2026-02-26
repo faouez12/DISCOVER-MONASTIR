@@ -68,7 +68,7 @@ export default function HeroSlider() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden bg-black">
+        <section className="relative h-[80vh] md:h-screen w-full overflow-hidden bg-black">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full overflow-hidden">
                 <AnimatePresence initial={false} custom={direction}>
@@ -93,9 +93,22 @@ export default function HeroSlider() {
                             }
                         }}
                     >
+                        {/* Background blurred version for mobile to fill the screen without cropping the main content */}
+                        <div className="absolute inset-0 md:hidden">
+                            <video
+                                src={slides[currentIndex].video}
+                                className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110"
+                                playsInline
+                                autoPlay
+                                muted
+                                loop
+                            />
+                        </div>
+
+                        {/* Main Video: Contain on mobile to see everything, Cover on desktop for full impact */}
                         <video
                             ref={videoRef}
-                            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                            className="absolute inset-0 w-full h-full object-contain md:object-cover pointer-events-none z-10"
                             style={{
                                 width: '100%',
                                 height: '100%',
