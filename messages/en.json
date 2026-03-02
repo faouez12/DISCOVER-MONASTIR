@@ -48,7 +48,11 @@
         "livingCycle": "The Living Cycle",
         "soulPledge": "The Soul Pledge",
         "signChronicle": "Sign the Chronicle",
-        "legacy": "You are now part of the legacy"
+        "legacy": "You are now part of the legacy",
+        "spring": "Spring",
+        "summer": "Summer",
+        "autumn": "Autumn",
+        "winter": "Winter"
     },
     "TravelInfo": {
         "titlePart1": "Plan Your",

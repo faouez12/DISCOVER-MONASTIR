@@ -378,7 +378,7 @@ export default function DiscoverPage({ params }: { params: Promise<{ category: s
                                     onClick={() => setActiveSeason(season)}
                                     className={`px-6 py-2 md:px-10 md:py-4 rounded-full border transition-all duration-500 uppercase text-[10px] md:text-xs font-black tracking-widest ${activeSeason === season ? 'bg-[#FBBF24] text-black border-[#FBBF24]' : 'bg-white/5 border-white/10 text-white/40 hover:border-white/30'}`}
                                 >
-                                    {season}
+                                    {t(season)}
                                 </button>
                             ))}
                         </div>
@@ -418,13 +418,15 @@ export default function DiscoverPage({ params }: { params: Promise<{ category: s
                         <p className="text-2xl md:text-7xl font-light leading-tight italic text-white/90">
                             “{data.pledge}”
                         </p>
-                        <motion.button
-                            className="px-10 py-6 md:px-20 md:py-8 rounded-full border-2 border-white/20 text-white font-black uppercase tracking-[0.5em] md:tracking-[1em] text-[10px] md:text-xs hover:bg-white hover:text-black transition-all duration-1000 group relative overflow-hidden"
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <span className="relative z-10">{t('signChronicle')}</span>
-                            <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
-                        </motion.button>
+                        <Link href={`/${locale}/login`}>
+                            <motion.button
+                                className="px-10 py-6 md:px-20 md:py-8 rounded-full border-2 border-white/20 text-white font-black uppercase tracking-[0.5em] md:tracking-[1em] text-[10px] md:text-xs hover:bg-white hover:text-black transition-all duration-1000 group relative overflow-hidden"
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                <span className="relative z-10">{t('signChronicle')}</span>
+                                <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
+                            </motion.button>
+                        </Link>
                         <div className="pt-12 md:pt-24 opacity-20 text-[8px] md:text-[10px] uppercase font-bold tracking-[0.4em] md:tracking-[0.8em]">{t('legacy')}</div>
                     </motion.div>
                 </section>

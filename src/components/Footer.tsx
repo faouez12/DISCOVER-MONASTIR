@@ -141,16 +141,47 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-white/40 text-sm uppercase tracking-widest">
-                    <p>© 2026 Discover Monastir. {t('rights')}</p>
-                    <div className="flex space-x-12 font-medium">
-                        <Link href="/privacy" className="hover:text-white transition-colors">{t('privacy')}</Link>
-                        <Link href="/terms" className="hover:text-white transition-colors">{t('terms')}</Link>
-                    </div>
+                {/* Footer Copyright Bar */}
+                <div className="mt-20 -mx-8 md:-mx-32 bg-[#0a0a0a] border-t border-white/5 py-8 text-center text-sm md:text-base text-gray-400">
+                    <p className="tracking-widest uppercase text-xs font-light">
+                        © 2026{" "}
+                        <a
+                            href="https://elhenifaouez.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold mx-1"
+                        >
+                            <span className="gradient-glow-text px-1">El Heni Faouez</span>
+                        </a>{" "}
+                        All Rights Reserved , Inc.
+                    </p>
                 </div>
-            </div>
 
-            <div className="h-2 w-full bg-gradient-to-r from-[#96611F] via-[#FBBF24] to-[#96611F]" />
+                <style jsx>{`
+                    .gradient-glow-text {
+                        background: linear-gradient(
+                            90deg,
+                            #FBBF24 0%,
+                            #FB7185 25%,
+                            #6366F1 50%,
+                            #F472B6 75%,
+                            #FBBF24 100%
+                        );
+                        background-size: 200% auto;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: gradient-shift 4s linear infinite;
+                        font-weight: 800;
+                        letter-spacing: 0.05em;
+                    }
+
+                    @keyframes gradient-shift {
+                        0% { background-position: 0% center; }
+                        100% { background-position: 200% center; }
+                    }
+                `}</style>
+            </div>
         </footer>
     );
 }

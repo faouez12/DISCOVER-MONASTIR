@@ -157,12 +157,12 @@ export default function Navbar() {
                         </button>
 
                         {/* Login button */}
-                        <button
-                            onClick={() => handleNavClick("mystery-club")}
-                            className="px-7 py-2.5 bg-gradient-to-r from-[#96611F] to-[#FBBF24] text-black font-black uppercase text-xs tracking-[0.2em] rounded-full hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transition-all hover:scale-105 active:scale-95"
+                        <Link
+                            href={`/${currentLocale}/login`}
+                            className="px-7 py-2.5 bg-gradient-to-r from-[#96611F] to-[#FBBF24] text-black font-black uppercase text-xs tracking-[0.2em] rounded-full hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transition-all hover:scale-105 active:scale-95 text-center flex items-center justify-center"
                         >
                             {t('login')}
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Mobile menu button */}
@@ -212,12 +212,13 @@ export default function Navbar() {
                                         </svg>
                                     </button>
                                 </div>
-                                <button
-                                    onClick={() => { handleNavClick("mystery-club"); setIsMenuOpen(false); }}
-                                    className="w-full px-6 py-5 bg-gradient-to-r from-[#96611F] to-[#FBBF24] text-black font-black uppercase text-xs tracking-[0.2em] rounded-2xl"
+                                <Link
+                                    href={`/${currentLocale}/login`}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="w-full px-6 py-5 bg-gradient-to-r from-[#96611F] to-[#FBBF24] text-black font-black uppercase text-xs tracking-[0.2em] rounded-2xl text-center block"
                                 >
                                     {t('login')}
-                                </button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
